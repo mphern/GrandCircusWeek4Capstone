@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hernski's Diner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>Welcome to Hernski's Diner!</h1>
+    <h2>Create your order below</h2>
+</header>
+<body>
+    <div id="main-display">
+    <div class="menu">
+        <div>
+        <h3>FRIES</h3>
+            <div id="frys">
+                <ul id="fry-list">
+                </ul>
+                <div id="fry-add-buttons">
+                </div>
+            </div>
+
+        </div>
+        <div>
+        <h3>BURGERS</h3>
+            <div id="burgers">
+                <ul id="burger-list">
+                </ul>
+                <div id="burger-add-buttons">
+                </div>
+            </div>
+        
+        </div>
+    </div> 
+
+    <div class="menu">
+        <div>
+            <h3>DRINKS</h3>
+            <div id="drinks">
+                <ul id="drink-list">
+                </ul>
+                <div id="drink-add-buttons">
+                </div>
+            </div>
+    
+        </div>
+        <div>
+            <h3>VALUE MEALS</h3>
+            <div id="meals">
+                <ul id="meal-list">
+                </ul>
+                <div id="meal-add-buttons">
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+
+    <div class="menu">
+        <div>
+            <h3>DESSERTS</h3>
+            <div id="desserts">
+                <ul id="dessert-list">
+                </ul>
+                <div id="dessert-add-buttons">
+                </div>
+            </div>
+    
+        </div>
+        <button id="checkout">Check out</button>
+ 
+    </div> 
+    <h2>Current order</h2>
+    <div id="order-header"><h2 class="item-price">Item</h2><h2 class ="item-price">Price</h2></div>
+    <div class="current-order">
+        <ol id="order-list">
+        </ol>
+        <div id="prices">
+        </div>
+    </div>
+
+    <div class="current-order">
+    <span><div><h4>Total:</h4></div></span><span id="running-total"></span>
+    </div>
+    <div id="taxtotal">
+    <span><h4>Tax:</h4></span><span id="tax"></span>
+    </div>
+    <div id="grandtotal">
+    <span><h4>Grand Total:</h4></span><span id="grand-total"></span>
+    </div>
+     
+</body>
+<script src="jquery3.3.1.js"></script>
+<script src="products.js"></script> 
+</html>
