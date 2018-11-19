@@ -81,23 +81,23 @@ var shoppingCart = [];
 items.forEach(item => {
     if(item.catagory === "Fry") {
         $("#fry-list").append("<li>" + item.name + " ($" + item.price + ")</li>");
-        $("#fry-add-buttons").append("<button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
+        $("#fry-add-buttons").append("<button type=button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
     }
     if(item.catagory === "Burger") {
-        $("#burger-list").append("<li>" + item.name + "</li>");
-        $("#burger-add-buttons").append("<button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
+        $("#burger-list").append("<li>" + item.name + " ($" + item.price + ")</li>");
+        $("#burger-add-buttons").append("<button type=button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
     }
     if(item.catagory === "Drink") {
-        $("#drink-list").append("<li>" + item.name + "</li>");
-        $("#drink-add-buttons").append("<button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
+        $("#drink-list").append("<li>" + item.name + " ($" + item.price + ")</li>");
+        $("#drink-add-buttons").append("<button type=button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
     }
     if(item.catagory === "Meal") {
-        $("#meal-list").append("<li>" + item.name + "</li>");
-        $("#meal-add-buttons").append("<button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
+        $("#meal-list").append("<li>" + item.name + " ($" + item.price + ")</li>");
+        $("#meal-add-buttons").append("<button type=button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
     }
     if(item.catagory === "Dessert") {
-        $("#dessert-list").append("<li>" + item.name + "</li>");
-        $("#dessert-add-buttons").append("<button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
+        $("#dessert-list").append("<li>" + item.name + " ($" + item.price + ")</li>");
+        $("#dessert-add-buttons").append("<button type=button id="+(item.name).split(' ').join('') + "-button> Click to Add to Order");
     }
 });
 
@@ -191,6 +191,14 @@ $("#checkout").click(function() {
         total+=item.price;
     });
     ComputeTax(total);
+});
+
+$("#clear").click(function() { 
+    $("#order-list").empty();
+    $("#prices").empty();
+    $("#running-total").empty();
+    $("#tax").empty();
+    $("#grand-total").empty();
 });
 
 function AddToOrder(item) { 

@@ -1,11 +1,15 @@
 
 body {
     min-height: 1000px;
+    background-color: red;
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
 }
 
 #frys, #burgers, #drinks, #meals, #desserts {
    display: flex;
-   flex-direction: row; 
+   flex-direction: row;
+   width: 450px; 
 }
 
 #main-display {
@@ -16,15 +20,18 @@ body {
 
 h1 {
     text-align: center;
+    margin-bottom: -20px;
 }
 
 h2 {
     text-align: center;
+    margin-bottom: -25px;
 }
 
 h3 {
-    margin-left: 100px;
+    margin-left: 21px;
     margin-bottom: 15px;
+    border-bottom: solid black 2px;
 }
 
 h4 {
@@ -40,8 +47,18 @@ h4 {
 
 #checkout {
     font-size: 20px;
-    margin-top: 80px;
-    margin-left: 120px;
+    margin-top: 115px;
+    margin-left: 90px;
+    margin-right: -84px;
+    width: 166px;
+}
+
+#clear {
+    font-size: 20px;
+    margin-top: 115px;
+    margin-left: 90px;
+    margin-right: -162px;
+    width: 175px
 }
 
 #fry-list, #drink-list {
@@ -69,12 +86,13 @@ h4 {
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
-    margin-top: 11px;
+    margin-top: 20px;
     margin-left: 11px;
+    margin-bottom: 8px;
 }
 span{
     text-align: center;
-    font-size: 15px;
+    font-size: 30px;
 }
 #order-header {
     display: flex;
@@ -90,7 +108,7 @@ span{
     flex-direction: row; 
     align-content: space-between;
     justify-content: space-between;  
-    width: 235px;
+    width: 260px;
     margin: 0 auto; 
     border-bottom: solid black 2px;
 }
@@ -105,7 +123,7 @@ p {
     margin-bottom: 0%;
 }
 #prices {
-    margin-top: 16px;
+    margin-top: 23px;
 }
 
 ol {
@@ -116,7 +134,7 @@ ol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
-    width: 235px;
+    width: 260px;
     margin: 0 auto; 
     border-bottom: solid black 2px;
     text-align: left;
@@ -126,7 +144,7 @@ ol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
-    width: 235px;
+    width: 260px;
     margin: 0 auto; 
     text-align: left;
 }
