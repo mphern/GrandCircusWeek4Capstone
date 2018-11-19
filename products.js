@@ -193,7 +193,8 @@ $("#checkout").click(function() {
     ComputeTax(total);
 });
 
-$("#clear").click(function() { 
+$("#clear").click(function() {
+    shoppingCart = []; 
     $("#order-list").empty();
     $("#prices").empty();
     $("#running-total").empty();
